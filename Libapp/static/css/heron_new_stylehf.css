@@ -1,0 +1,548 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body {
+    overflow-x: hidden; /*added*/
+    margin: 0;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;    
+    font-size: 14px !important;
+    line-height: 1.42857143;
+}
+.row {
+    margin-right: -35px !important;
+    margin-left: -35px !important;
+}
+a {
+    color: #337ab7 !important;
+    text-decoration: none;
+}
+a:focus, a:hover {
+    color: #0c4d6d !important;
+    text-decoration: none !important;
+}
+/*---------------- header starts------------------ */
+.dexur_headlogo img {
+    width: 30%;
+    margin-left: 2rem;
+}
+.homenav li {
+    padding: 0 1rem;
+}
+.homenav {
+    display: inline-flex;
+    list-style-type: none;
+}
+.home_act {
+    margin-top: 9rem;
+}
+.add_log .address {
+    /*padding-left: 3rem;*/
+}
+.add_log {
+    margin-bottom: 2rem;
+    align-items: center;
+}
+.dexur_navtab2 {
+    background-color: #fafafa !important;
+    box-shadow: 0px 1px 2px 1px rgba(154, 154, 204, 0.22);
+}
+.dexur_frsthead{
+    /*position: fixed;*/
+    display: flex;
+    align-items: center;
+    top: 0;
+    height: 70px;
+    right: 0;
+    left: 0;
+    box-shadow: 0px 1px 2px 1px rgba(154, 154, 204, 0.22);
+    z-index: 1;
+    background-color: #ffffff;
+    margin-bottom: -50px;
+}
+.dexur_usernav {
+    display: flex;
+    justify-content: flex-end;
+    right: 3rem;
+    align-items: center;
+}
+.user {
+    position: relative;
+    font-weight: 700;
+    font-size: 16px;
+    left: -2rem;
+}
+.dexur_cl {
+    display: flex;
+}
+.nav-link {
+    padding: .5rem 0.9rem !important;
+}
+.news_tab .active:hover {
+    text-decoration: none;
+}
+.news_tab li.active, .menuselect li.active {
+    color: #0c4d6d!important;
+    font-weight: 600;
+    background-color: #fafafa;
+    padding: .7rem;
+    margin-top: -0.8rem;
+    border-bottom: 3px solid #0c4d6d;
+}
+.nav-link:focus, .nav-link:hover {
+    color: #0c4d6d !important;
+    font-weight: 600;
+}
+.dexur_navtab {
+    margin-top: -0.7rem;
+    box-shadow: 0 0px 6px rgba(0,0,0,.15);
+}
+.head1 {
+    margin: 1rem;
+}
+.menuselect {
+    margin-left: 0;
+}
+.menuselect a:hover, .news_tab a:hover {
+    font-weight: 600;
+    color: #0c4d6d !important;
+}
+.home_act a:hover {
+    font-weight: 600 !important;
+    color: #0c4d6d !important;
+}
+.navigation {
+    height: 50px;
+    background: #fff;
+}
+.brand {
+    position: absolute;
+    top: 0rem;
+}
+.homenav {
+    margin-left: 0.5rem;
+}
+label {
+    display: inline-block;
+    max-width: 100%;
+    margin-bottom: 5px;
+    font-family: inherit;
+    font-weight: 500;
+}
+.brand-acacia {
+    margin-top: -2rem;
+    font-size: 1.4em;
+}
+.brand-acacia img {
+    margin-right: 2rem;
+    float: right;
+    width: 30%;
+}
+.line2 {
+    height: 3px;
+    border: none;
+    margin-top: 2rem !important;
+}
+.news_tab {
+    width: 100%;
+    margin-left: 0;
+}
+.caret-icon{
+margin-left:20px;
+}  
+.dropdown:hover .caret-icon {
+    transform: scale(1.2) rotate(-180deg);
+}
+.dexur_usermob{
+    display: none;
+}
+#primary_nav_wrap {
+    margin-left: 29px;
+    background-color: white;
+}
+#primary_nav_wrap ul
+{
+	list-style:none;
+	position:relative;
+	float:left;
+	margin:0;
+	padding:0
+}
+#primary_nav_wrap ul a
+{
+	display:block;
+	color: #0c4d6d  !important;
+	text-decoration:none;
+    line-height: 40px;
+    font-weight: 500;
+	padding:0 15px;
+}
+#primary_nav_wrap ul a:hover {
+    display: block;
+    color: #0c4d6d !important;
+    text-decoration: none;
+    line-height: 40px;
+    padding: 0 15px;
+}
+#primary_nav_wrap ul li.current-menu-item, #primary_nav_wrap ul li:hover {
+    background: #fafafa;
+    border-bottom: 3px solid #0c4d6d;
+    box-shadow: 2px 3px 4px #ececee;
+}
+#primary_nav_wrap ul li {
+    position: relative;
+    float: left;
+    margin: 0;
+    padding: 6px;
+}
+#primary_nav_wrap:not(:hover) ul
+{
+    transition: all 0.2s ease-in-out;
+}
+#primary_nav_wrap:hover > ul:not(:hover)
+{
+    transition: all 0s!important;
+}   
+#primary_nav_wrap ul ul li
+{
+	float:none;
+	width:200px
+}
+#primary_nav_wrap ul ul a
+{
+	line-height:120%;
+	padding:10px 15px
+}
+#primary_nav_wrap ul ul ul
+{
+	top:0;
+	left:100%
+}
+#primary_nav_wrap ul li:hover > ul
+{
+	visibility: visible;
+  transition-delay: 0s;
+}
+.dropdownbtn span{
+    font-size: 30px;
+    position: relative;
+    top: 1.5rem;
+}
+.underline .line {
+    width: 10rem;
+    height: 3px;
+    background: linear-gradient(90deg, #172e56, #209bd6);
+    display: inline-block;
+    margin-top: 1.5%;
+}
+  
+/*---------------- header ends------------------ */
+
+/* ---------------footer starts---------------- */
+footer {
+    position: relative;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 0rem;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.footlinks a {
+    font-size: 16px;
+    font-weight: 500;
+    color: #337ab7;
+}
+.cpyright h6 {
+    float: left;
+    font-size: 15px;
+    margin-left: 2rem;
+}
+.footlinks a:nth-child(2), .footlinks a:nth-child(3) {
+    margin-left: 0rem;
+}
+.footlinks a:after {
+    content: "";
+    display: block;
+   /* width: 2px;
+    height: 24px;
+    background: #446079;
+    left: 125px;*/
+    top: 0%;
+    position: absolute;
+}
+.footlinks a:nth-child(3):before {
+    content: "";
+    display: block;
+    /*width: 2px;
+    height: 24px;
+    background: #446079;
+    left: 217px;*/
+    top: 0%;
+    position: absolute;
+}
+.footlinks a:nth-child(1) {
+    margin-left: -55rem;
+}
+.back-to-top {
+    position: fixed;
+    right: 15px;
+    bottom: 15px;
+    z-index: 99999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    color: #fff;
+    transition: all 0.4s;
+    cursor: pointer;
+    background-color: #446079;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+.back-to-top:hover {
+    background-color: #263d51;
+}
+.back-to-top a {
+    color: #fff !important;
+}
+.footendsM{
+    display: none;
+}
+/* ---------------footer ends---------------- */
+
+
+
+
+/* ---------------media queries starts---------------- */
+@media only screen and (device-width: 768px){    
+    .add_log {
+        margin-bottom: 0;
+   }
+   .dexur_headlogo img {
+    width: 24%;
+    margin-left: 3rem;
+}
+.dexur_usernav {
+    width: 82% !important;
+}
+.nav-link:focus, .nav-link:hover {
+    font-weight: 500;
+}
+    .nav-right {
+        margin-top: -6.7rem;
+    }
+    .nav-right h6 {
+        right: -23rem;
+        top: -0.4rem;
+    }
+    .rightnav .nav-link {
+        right: 2rem;
+        top: -4.9rem;
+    }
+    .brand-acacia {
+        margin-top: -7rem;
+    }
+    .brand-acacia img {
+        width: 23%;
+        position: relative;
+        top: -2rem;
+    }
+    .footlinks a:nth-child(1) {
+        margin-left: -23rem;
+    }
+    .footlinks {
+        margin-left: 34rem;
+    }
+}
+@media only screen and (device-width: 1024px){
+    .dexur_headlogo img {
+        width: 19%;
+    }
+    .nav-right h6 {
+        right: -7rem;
+        top: 0.1rem;
+    }
+    .brand-acacia img {
+        width: 20%;
+    }
+    .brand-acacia {
+        margin-top: -10rem;
+    }
+    .user {
+        left: -9rem;
+    }
+    .dexur_cl {
+        margin-left: -6rem;
+    }
+    .footlinks a:nth-child(1) {
+        margin-left: -36rem;
+    }
+    .footlinks {
+        margin-left: 47rem;
+    }
+}
+@media only screen and (device-width: 320px){
+    .dexur_headlogo img {
+        width: 88% !important;
+    }
+}
+@media all and (min-width: 0px) and (max-width: 767px){
+    .add_log .address {
+        padding-left: 1.8rem;
+    }
+    #primary_nav_wrap ul a:hover {
+        line-height: 37px;
+    }    
+    #primary_nav_wrap ul li.current-menu-item {
+        border-bottom: 3px solid #0c4d6d;
+        padding: 4px 6px;
+    }
+    .hosp_search {
+        position: relative;
+        top: 8rem;
+    }
+    .menuselect {
+        margin-left: -2rem;
+    }
+    .wrap {
+        width: 95%;
+    }
+    .dexur_navtab2 {
+        margin-top: 0;
+    }
+    .dexur_navtab li {
+        line-height: 25px;
+    }
+    .dexur_navtab2 .menuselect li {
+        line-height: 23px;
+    }
+    .mob_dropdown{
+        float: right;
+    }
+    .dropdownbtn {
+        background-color:#fff;
+        color: #021323;
+        padding: 16px;  
+        border: none;
+        font-weight: 600;
+        cursor: pointer;
+      }  
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        right: 0.4rem;
+        min-width: 170px;
+        box-shadow: 0px 4px 7px 0px rgba(0, 0, 0, 0.2);
+        background-color: #fff;
+        z-index: 1;
+      }  
+      .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+      }  
+      .dropdown-content a:hover {
+        background-color: #f1f1f1;
+      }  
+      .dropdown:hover .dropdown-content {
+        display: block;
+      }  
+    .dexur_usernav{
+        display: none;
+    }
+    .dexur_headlogo img {
+        width: 50%;
+        margin-left: 1.5rem;
+    }
+    .dexur_usermob {
+        display: block;
+        margin-top: -1rem;
+    }
+    .homenav {
+        margin-left: -0.5rem;
+    }
+    .brand img {
+        width: 55%;
+        top: 0.3rem;
+        left: -1.6rem;
+    }
+    .nav-right h6 {
+        right: -13rem;
+        top: -2.6rem;
+    }
+    .rightnav {
+        height: 76px;
+        display: grid;
+    }
+    .rightnav .nav-link {
+        right: 0rem; 
+        top: 0rem;
+    }  
+    .brand-acacia img {
+        margin: 0 auto;
+        float: none;
+        width: 46%;
+    }
+    .brand-acacia {
+        margin-top: 0;
+        display: flex;
+        text-align: center;
+    }
+    .logo img {
+        left: 0rem;
+        top: 0.6rem;
+    }
+    .news_tab {
+        margin-left: -2.0rem;
+    }
+    .menuselect ul {
+        margin-left: -2rem;
+    }
+    .footlinks {
+        justify-content: center;
+    }
+    .cpyright h6 {
+        margin: 1rem;
+    }
+    .navbar-nav-right {
+        top: -1.9rem;
+    }
+    .user {
+        top: -1.8rem;
+        right: -11rem;
+    }    
+    .navbar-nav-right .nav-link {
+        padding: 0rem 0.3rem;
+    }
+    .cpyright {
+        display: grid;
+        order: 2;
+    }
+    .back-to-top i {
+        font-size: 20px;
+        width: 40px;
+        height: 40px;
+    }
+    .footlinks a:after{
+        display: none;
+    }
+    .footlinks a:nth-child(3):before{
+        display: none;
+    }
+    .footendsM{
+        display: block;
+    }
+    .footends{
+        display: none;
+    }
+    .footlinks a:nth-child(1) {
+        margin-left: 0;
+    }
+}
+/* ---------------media queries ends---------------- */
+
+
