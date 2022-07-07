@@ -1,0 +1,17 @@
+sudo apt-get install python3-pip
+sudo apt install postgresql
+sudo pip3 install django==2.2
+
+Django installed SuccessFully
+sudo apt-get install python3-psycopg2
+
+django-admin startproject Library
+python3 manage.py startapp Libapp
+python3 manage.py createsuperuser --admin page
+python3 manage.py makemigrations
+python3 manage.py migrate
+python3 manage.py runserver
+
+------------> For Sending Mails --------In terminal
+
+python -m smtpd -n -c DebuggingServer localhost:1025

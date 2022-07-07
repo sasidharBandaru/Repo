@@ -1,0 +1,16 @@
+----Copy Query ---
+
+\copy library_book_details(book_id, isbn_id, authors, publication_year,title, language) from '/home/sasirocks/Sasi/Cognizant/Project/Backend_Data.csv' with csv delimiter ',' header;
+
+
+
+------------After Finding Amazon Ids Loading into ---------
+\copy book_id_with_amazon_ids(book_id, amazon_id, amazon_url) from '/home/sasirocks/Sasi/Cognizant/Project/Database/Extra_files/book_id_with_amazon_ids.csv' with csv delimiter '|' header;
+
+--------Updating Amzaon IDs into Main table 
+update library_book_details  set amazon_id = amaz_ids.amazon_id, amazon_link = amaz_ids.amazon_url from book_id_with_amazon_ids as amaz_ids where library_book_details.book_id = amaz_ids.book_id;
+
+
+-----------> Dumbing whole database into file (libraryapp.pgsql)
+
+pg_dump -U postgres libraryapp > /home/sasirocks/Sas/Cognizant/Project/Database/libraryapp.pgsql
